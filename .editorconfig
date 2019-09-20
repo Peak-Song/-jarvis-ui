@@ -1,0 +1,11 @@
+# https://editorconfig.org/
+# editorconfig 来规范编辑
+# https://juejin.im/post/5b9cba4c6fb9a05cf67a79a4
+
+root = true
+[*.{js,jsx,ts,tsx,vue}]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
+charset = utf-8
