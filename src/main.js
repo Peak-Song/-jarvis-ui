@@ -8,6 +8,9 @@ import 'normalize.css/normalize.css' // a modern alternative to CSS resets
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
+import '@/styles/index.scss' // global css
+import '@/icons' // icon
+
 Vue.config.productionTip = false
 Vue.use(Element, { size: 'small' })
 
