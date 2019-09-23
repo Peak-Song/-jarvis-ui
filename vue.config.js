@@ -1,6 +1,7 @@
 'use strict'
 
 const path = require('path')
+const webpackConfig = require('./webpack.config')
 
 function resolve (dir) {
   return path.join(__dirname, dir)
@@ -35,15 +36,7 @@ module.exports = {
       errors: true
     }
   },
-  configureWebpack: {
-    name: 'Vue Admin Template',
-
-    resolve: {
-      alias: {
-        '@': path.resolve(__dirname, 'src')
-      }
-    }
-  },
+  configureWebpack: webpackConfig,
   chainWebpack (config) {
     config.plugins.delete('preload') // TODO: need test
     config.plugins.delete('prefetch') // TODO: need test

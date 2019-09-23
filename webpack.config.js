@@ -2,8 +2,7 @@
 const path = require('path')
 
 module.exports = {
-
-  name: 'Vue Admin Template',
+  name: 'Jarvis',
 
   resolve: {
     alias: {
